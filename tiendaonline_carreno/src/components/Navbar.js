@@ -25,7 +25,8 @@ function Navbar () {
             </li>
             </ul>
             <span className="navbar-text">
-              <CartWidget/>
+              <Link to='/cart'><CartWidget/></Link>
+              
             </span>
           </div>
         </div>
