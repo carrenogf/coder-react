@@ -1,9 +1,8 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext([]);
 export const CartContextProvider = ({ children }) => {
     const [productsAdded, setProductsAdded] = useState([]);
-  
     function addItem(item, quantity) {
       const isAlreadyAdded = isInCart(item.id);
       if (isAlreadyAdded) {
@@ -15,18 +14,18 @@ export const CartContextProvider = ({ children }) => {
                   quantityAdded: productAdded.quantityAdded + quantity,
                 }
               : productAdded
+                  
           )
-        );
-        console.log("el producto ya está")
-        console.log(productsAdded)
+          
+        )
+        console.log(productsAdded);
       } else {
         setProductsAdded((prevState) =>
           prevState.concat({ item, quantityAdded: quantity })
         );
-        console.log("el producto no estaba y se agrego")
-        console.log(productsAdded)
-
       }
+      alert(`Se agregó el producto ${item.name}, Cantidad: ${quantity}`)
+      
       
     }
   
@@ -46,7 +45,7 @@ export const CartContextProvider = ({ children }) => {
   
     return (
       <CartContext.Provider
-        value={{ addItem, removeItem, clear, isInCart, productsAdded }}
+        value={{ addItem, removeItem, clear, isInCart, productsAdded}}
       >
         {children}
       </CartContext.Provider>

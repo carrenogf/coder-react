@@ -1,11 +1,10 @@
 import Navbar from "../components/Navbar";
 import Footer from "./Footer"
-import { CartContextProvider } from "../Context/CartContext";
 
 export const Layout = ({children})=>{
   return (
 
-    <main>
+    <main className="container-fluid">
         <Navbar/>
         {children}
         <Footer/>
