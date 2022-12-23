@@ -16,3 +16,22 @@ cuenta con los siguentes funcionalidades:
 * Al realizar la compra registra la merma correspondiente en el stock
 * Registra los datos del formulario del usuario en el formulario de compra
 
+# Prints de pantalla del proyecto
+
+## página de inicio
+![inicio](tiendaonline_carreno/src/assets/img/prints/inicio.png)
+
+## Añadir produnto en el ItemDetail.js
+![añadir_producto](tiendaonline_carreno/src/assets/img/prints/añadir%20producto.png)
+
+## Carrito
+![carrito](tiendaonline_carreno/src/assets/img/prints/carrito.png)
+
+## Continuar compra mostrando el formulario para ingreso de datos del usuario
+![form](tiendaonline_carreno/src/assets/img/prints/continuar%20compra.png)
+
+## Compra finalizada
+![compra_finalizada](tiendaonline_carreno/src/assets/img/prints/compra%20finalizada.png)
+
+## Base de datos en Firebase (muestra la compra realizada)
+![compra_bbdd](tiendaonline_carreno/src/assets/img/prints/compra%20bbdd.png)
